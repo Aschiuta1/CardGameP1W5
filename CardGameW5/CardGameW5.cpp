@@ -5,14 +5,12 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    system("color 01"); //change color
 
-    //test runn
-    int i_number;
-    std::cout << "Hello World!\n";
-    std::cout << "Enter a Number:";
-    std::cin >> i_number; //
-    std::cout << "\nYou enteered:" << i_number;
+    std::cout << "B9"; //cards
+   
+   
+
     // erik
 }
 
