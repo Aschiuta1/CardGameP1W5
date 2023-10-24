@@ -8,11 +8,16 @@ using namespace std;
 int main()
 {
     HANDLE color = GetStdHandle(STD_OUTPUT_HANDLE); //just once, allows you to use setconsoletextattr
-   // system("color 01"); //change color
-   // std::cout << "B9\n"; //cards
+    //tolani
+    std::cout << "Welcome to Card Game!\n\n";
+    std::cout << "These are the rules:\n";
+    std::cout << "1. Each player will be presented 6 cards.\n";
+    std::cout << "2. The player whose turn is first will play one of their cards.\n";
+    std::cout << "3. The next cad played must match the colour or number of the previous card on the stack.\n";
+    std::cout << "4. If none of your cards match, you get skipped.\n";
+    std::cout << "5. The player with no more cards left in their deck wins and the game ends.\n\n";
+    std::cout << "Are you ready? Let's get started!";
 
-    //system("color 04 ");
-   // std::cout << "R4";
    
     SetConsoleTextAttribute(color, 01); // this gives specific colors in this con
     cout << "B9\n";
