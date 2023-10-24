@@ -2,16 +2,32 @@
 //
 
 #include <iostream>
+using namespace std;
+#include <windows.h> // to use the comipler
 
 int main()
 {
-    system("color 01"); //change color
+    HANDLE color = GetStdHandle(STD_OUTPUT_HANDLE); //just once, allows you to use setconsoletextattr
+   // system("color 01"); //change color
+   // std::cout << "B9\n"; //cards
 
-    std::cout << "B9"; //cards
+    //system("color 04 ");
+   // std::cout << "R4";
    
+    SetConsoleTextAttribute(color, 01); // this gives specific colors in this con
+    cout << "B9\n";
+
+
+    SetConsoleTextAttribute(color, 04);
+    cout << "R4";
+
+
    
 
     // erik
+
+    SetConsoleTextAttribute(color, 15); // to change color on the console return
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
