@@ -6,12 +6,9 @@
 using namespace std;
 #include <windows.h> // to use the comipler
 // this is the structure that builds the card itself
-struct  {
-
+struct  Card{
     int num;
     int color;
-
-
 }card;
 int main()
 {
@@ -27,13 +24,21 @@ int main()
     std::cout << "Are you ready? Let's get started!\n";
 
     srand(time(NULL));// assignes a random value each time we run the exe
-    card.num = rand() % 10 + 1;
-    SetConsoleTextAttribute(color, 01); // this gives specific colors in this con
-    cout << card.num;
+
+    int possibleColors[4] = { 01,02,04,06 };
+
+    card.num = rand() % 10 + 1;// randomises the card number
+    card.color = possibleColors[rand() % 3];//randomises the card color
+    SetConsoleTextAttribute(color, card.color); // this gives specific colors in this con
+    cout << card.num <<endl;
+    cout << card.color<<endl;
+
+    Card cards[6];
 
 
-
-
+    /*for (int i = 0; i < 2; i++) {
+        cards[i] = Card(card.num, card.color);
+    }*/
    
 
     // erik
