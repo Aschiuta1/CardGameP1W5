@@ -7,7 +7,12 @@ int main()
 {
     std::cout << "Hello World!\n";
 
-
+    //test runn
+    int i_number;
+    std::cout << "Hello World!\n";
+    std::cout << "Enter a Number:";
+    std::cin >> i_number; //
+    std::cout << "\nYou enteered:" << i_number;
     // erik
 }
 
