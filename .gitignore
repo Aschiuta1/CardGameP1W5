@@ -38,8 +38,14 @@
 *.db-shm
 *.db-wal
 *.opendb
+*.pdb
+*.idb
 
 # Visual Executables
 
 *.vsidx
+
+
+
+
 
