@@ -2,9 +2,17 @@
 //
 
 #include <iostream>
+#include <stdio.h>
 using namespace std;
 #include <windows.h> // to use the comipler
+// this is the structure that builds the card itself
+struct  {
 
+    int num;
+    int color;
+
+
+}card;
 int main()
 {
     HANDLE color = GetStdHandle(STD_OUTPUT_HANDLE); //just once, allows you to use setconsoletextattr
@@ -16,15 +24,14 @@ int main()
     std::cout << "3. The next cad played must match the colour or number of the previous card on the stack.\n";
     std::cout << "4. If none of your cards match, you get skipped.\n";
     std::cout << "5. The player with no more cards left in their deck wins and the game ends.\n\n";
-    std::cout << "Are you ready? Let's get started!";
+    std::cout << "Are you ready? Let's get started!\n";
 
-   
+    srand(time(NULL));// assignes a random value each time we run the exe
+    card.num = rand() % 10 + 1;
     SetConsoleTextAttribute(color, 01); // this gives specific colors in this con
-    cout << "B9\n";
+    cout << card.num;
 
 
-    SetConsoleTextAttribute(color, 04);
-    cout << "R4";
 
 
    

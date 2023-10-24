@@ -1,1 +1,2 @@
 ﻿  CardGameW5.cpp
+C:\Git_Repo\CardGameP1W5\CardGameW5\CardGameW5.cpp(29,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
